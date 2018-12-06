@@ -11,9 +11,8 @@ ArtistName = "RageAgainstTheMachine"
 params = {
     "term": ArtistName,
     "media": "music",
-    "entity": "album",
     "attribute":"artistTerm",
-    "limit":"10"
+    "limit":"50"
 }
 
 res = requests.get(url,params=params)
@@ -21,6 +20,4 @@ res = requests.get(url,params=params)
 if res.status_code == 200:
     content = res.json()
     with open("json/RageAgainstTheMachine.json", "w") as fp:
-        json.dump(content,fp)
-    for c in content["results"]:
-        print(c["collectionName"])
+        json.dump(content,fp,indent=2)

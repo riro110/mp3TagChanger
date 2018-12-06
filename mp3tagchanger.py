@@ -3,14 +3,18 @@ import re
 from mutagen.easyid3 import EasyID3
 
 path = input("曲が入っているフォルダのパス＝")
-path = path.replace("\\","/")
+path = path.replace("\\"," / ")
+
 print(path)
+
 path_list = os.listdir(path) #編集したいmp3が入ったフォルダの中身一覧
 path_list = [mp3 for mp3 in path_list if "mp3" in mp3]
 
 print(path_list)
+
 pattern1 = r"^([0-9]+)(\s|-)(.*).mp3$"
-pattern2 = r"(\\).*"
+pattern2=r"(\\).*"
+
 Arbum = path.split("/")[-1]
 Artist = path.split("/")[-2]
 
