@@ -1,40 +1,36 @@
 {
-  "date": "1993-01-21",
-  "text-representation": {
-    "language": "eng",
-    "script": "Latn"
-  },
-  "id": "05f8a9f4-2ed6-49b9-8b07-ea62879aa9b5",
-  "release-events": [
-    {
-      "area": {
-        "iso-3166-1-codes": [
-          "JP"
-        ],
-        "disambiguation": "",
-        "name": "Japan",
-        "sort-name": "Japan",
-        "id": "2db42837-c832-3c27-b4a3-08198f75693c"
-      },
-      "date": "1993-01-21"
-    }
+  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+  "type": "Group",
+  "sort-name": "Rage Against the Machine",
+  "isnis": [
+    "0000000122905407"
   ],
-  "title": "Rage Against the Machine",
-  "cover-art-archive": {
-    "artwork": true,
-    "count": 3,
-    "back": true,
-    "darkened": false,
-    "front": true
+  "end_area": null,
+  "gender-id": null,
+  "area": {
+    "disambiguation": "",
+    "iso-3166-1-codes": [
+      "US"
+    ],
+    "name": "United States",
+    "sort-name": "United States",
+    "id": "489ce91b-6658-3307-9877-795b68554c98"
   },
-  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "name": "Rage Against the Machine",
+  "life-span": {
+    "begin": "1991-08",
+    "end": null,
+    "ended": false
+  },
+  "id": "3798b104-01cb-484c-a3b0-56adc6399b80",
   "disambiguation": "",
-  "country": "JP",
-  "status": "Official",
-  "packaging": "Jewel Case",
-  "quality": "normal",
-  "aliases": [],
-  "barcode": "4988009660820",
-  "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
-  "asin": "B00005G8SX"
+  "begin_area": {
+    "sort-name": "Los Angeles",
+    "name": "Los Angeles",
+    "id": "1f40c6e1-47ba-4e35-996f-fe6ee5840e62",
+    "disambiguation": ""
+  },
+  "ipis": [],
+  "gender": null,
+  "country": "US"
 }
