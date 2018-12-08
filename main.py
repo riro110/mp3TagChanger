@@ -11,6 +11,7 @@ ArtistName = "RageAgainstTheMachine"
 params = {
     "term": ArtistName,
     "media": "music",
+    "entity":"album",
     "attribute":"artistTerm",
     "limit":"50"
 }
