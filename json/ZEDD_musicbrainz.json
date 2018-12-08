@@ -1,0 +1,69 @@
+{
+  "created": "2018-12-07T02:47:43.687Z",
+  "count": 113,
+  "offset": 0,
+  "releases": [
+    {
+      "id": "2271b1af-2667-4394-8c4f-69035d865e7e",
+      "score": 100,
+      "count": 1,
+      "title": "Alive (Zedd remix)",
+      "status": "Official",
+      "packaging": "None",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "artist": {
+            "id": "ac7e838c-3d95-47c2-92a9-81767ad7c217",
+            "name": "Empire of the Sun",
+            "sort-name": "Empire of the Sun"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "106a48e6-afa3-4ddb-8790-fc6cb25f4fe6",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Alive (Zedd remix)",
+        "primary-type": "Single",
+        "secondary-types": [
+          "Remix"
+        ]
+      },
+      "date": "2014-06-18",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2014-06-18",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": [
+              "XW"
+            ]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "05099999396558",
+          "label": {
+            "id": "abea2d3e-eabf-4480-ab24-9382dd642c73",
+            "name": "Capitol Records"
+          }
+        }
+      ],
+      "track-count": 1,
+      "media": [
+        {
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ]
+    }
+  ]
+}
