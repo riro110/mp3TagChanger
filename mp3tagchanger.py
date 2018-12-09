@@ -6,11 +6,15 @@ from mutagen.easymp4 import EasyMP4
 from itunesAPI import iTunesSearchAPI
 import json
 
-path = input("Musicフォルダのパス＝")
+# 検索できなかったdir
+failed_dir = []
+
+artist_list = []
+album_list = []
+
+path = input("フォルダのパス＝")
 path = path.replace("\\", "/")
 
-def mp3TagChange(path):
-print(path) 
 
 path_list = os.listdir(path)  # 編集したいmp3が入ったフォルダの中身一覧
 path_list = [mp3 for mp3 in path_list if ("mp3" or "m4a") in mp3]
@@ -24,10 +28,12 @@ Arbum = path.split("/")[-1]
 Artist = path.split("/")[-2]
 
 print("Arbum:", Arbum, "Artist:", Artist)
+tracklist = {}
 try:
     itunes = iTunesSearchAPI()
     tracklist = itunes.tracklist(Artist, Arbum)
 except:
+    failed_dir.append(path)
 
 print(json.dumps(tracklist, indent=2))
 
@@ -36,7 +42,7 @@ if sure == "y":
     pass
 else:
     exit(1)
-    
+
 
 for mp3 in path_list:
     result = re.match(pattern1, mp3)
