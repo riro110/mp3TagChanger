@@ -15,13 +15,12 @@ album_list = []
 path = input("フォルダのパス＝")
 path = path.replace("\\", "/")
 
-
-path_list = os.listdir(path)  # 編集したいmp3が入ったフォルダの中身一覧
-path_list = [mp3 for mp3 in path_list if ("mp3" or "m4a") in mp3]
+path_list=os.listdir(path)  # 編集したいmp3が入ったフォルダの中身一覧
+path_list = [mp3 for mp3 in path_list if "mp3" in mp3]
 
 print(path_list)
 
-pattern1 = r"^([0-9]+)(\s|-)(.*).mp3$"
+pattern1 = r"^([0-9]+)(\s|-)(.*).(mp3|m4a|3gp)$"
 pattern2 = r"(\\).*"
 
 Arbum = path.split("/")[-1]
@@ -52,11 +51,12 @@ for mp3 in path_list:
     tags = None
     if "mp3" in mp3:
         tags = EasyID3(path+"/"+mp3)
-    if "m4a" in mp3:
-        tags = EasyMP4
-    tags['title'] = title
-    tags["album"] = Arbum
-    tags["artist"] = Artist
-    tags["albumartist"] = Artist
-    tags["tracknumber"] = trackNo
+        tags['title'] = title
+        tags["album"] = Arbum
+        tags["artist"] = Artist
+        tags["albumartist"] = Artist
+        tags["tracknumber"] = trackNo
+        if tracklist:
+            tags["genre"] = tracklist["Genre"]
+            tags["date"] = tracklist["date"]
     tags.save()
